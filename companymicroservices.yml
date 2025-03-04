@@ -1,4 +1,8 @@
 spring:
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
   jpa:
     show-sql: true
     hibernate:
@@ -14,6 +18,13 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
 server:
   port: 8081
+rabbimq:
+  exchange:
+    name: reviewExchange
+  queue:
+    name: review.posted
+  routingKey:
+    name: companyReviewQueue
 eureka:
   client:
     fetch-registry: true
