@@ -6,6 +6,10 @@ spring:
       username: root
       password: example
       authentication-database: admin
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
 server:
   port: 8083
 eureka:
