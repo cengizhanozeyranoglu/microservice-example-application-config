@@ -19,6 +19,9 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 rabbitmq:
-  exchange: reviewExchange
-  queue: review.posted
-  routingKey: companyReviewQueue
+  exchange:
+    name: reviewExchange
+  queue:
+    name: review.posted
+  routingKey:
+    name: companyReviewQueue
