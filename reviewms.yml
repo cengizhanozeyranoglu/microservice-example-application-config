@@ -10,12 +10,6 @@ spring:
     host: localhost
     username: guest
     password: guest
-    exchange:
-      name: reviewExchange
-    queue:
-      name: review.posted
-    routingKey:
-      name: companyReviewQueue
   redis:
     host: localhost
     port: 6379
@@ -26,6 +20,13 @@ spring:
         max-idle: 5
         min-idle: 1
         max-wait: -1
+rabbitmq:
+  exchange:
+    name: reviewExchange
+  queue:
+    name: review.posted
+  routingKey:
+    name: companyReviewQueue
 server:
   port: 8083
 eureka:
